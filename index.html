@@ -1,0 +1,110 @@
+<html> 
+<head> <title>jQuery Mobile Form</title> 
+<meta name="viewport" content="width=device-width, initial-scale">
+ <link rel="stylesheet" href="css/jquery-mobile.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+  
+ <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+   <script src="js/jquery-mobile.js"></script>
+  </head>
+<body>
+   <div data-role="page">
+   <div data-role="header" data-theme="a">
+     <h1>Censo</h1> 
+</div> 
+<div data-role="main" class="ui-content" data-theme="a"> 
+   <form method="post" action="mailto:jeansito87@gmail.com" data-ajax="false"> 
+   <label for="nombre">Nombre completo: </label>
+    <input type="text" name="nombre" id="nombre" ><br>
+    
+   <fieldset data-role="controlgroup" data-mini="true" data-type = "horizontal">
+<input type="radio" name="radio-mini" id="radio-mini-1" value="choice-1"
+checked="checked" />
+<label for="radio-mini-1">De 10 a 18 anos </label>
+<input type="radio" name="radio-mini" id="radio-mini-2" value="choice-2" />
+<label for="radio-mini-2">De 18 a 30 anos </label>
+<input type="radio" name="radio-mini" id="radio-mini-3" value="choice-3" />
+<label for="radio-mini-3">De 30 a 45 anos</label>
+<input type="radio" name="radio-mini" id="radio-mini-4" value="choice-4" />
+<label for="radio-mini-4">De 45 a 65 anos</label>
+<input type="radio" name="radio-mini" id="radio-mini-5" value="choice-5" />
+<label for="radio-mini-5">De 65 o mas anos</label>
+</fieldset><br>
+    
+     <fieldset data-role="controlgroup"> <legend>Genero:</legend> 
+     <label for="masculino">Masculino</label> 
+     <input type="radio" name="genero" id="masculino" value="male"> 
+     <label for="femenino">Femenino</label> 
+     <input type="radio" name="genero" id="femenino" value="femenino"> 
+     </fieldset><br> 
+    
+    Fecha: <input type="date" name="fecha" step="1" min="2013-01-01" max="2016-09-01" value="2016-09-14"><br>
+
+      <fieldset data-role="controlgroup">
+        <legend>Que tipo de servicios tiene en Casa?</legend>
+      </fieldset>
+     <input type="checkbox" name="rock" id="rock" class="custom"/>
+	<label for="rock">Luz Electrica</label>
+ 
+    <input type="checkbox" name="pop" id="pop" class="custom"/>
+	<label for="pop">Drenaje</label>
+    
+    <input type="checkbox" name="elec" id="elec" class="custom"/>
+	<label for="elec">Agua potable</label>
+
+       <input type="checkbox" name="roll" id="roll" class="custom"/>
+       <label for="roll">todos Los anteriores </label>
+
+       <fieldset data-role="controlgroup"> <legend>Que tipo de servicios tiene en su colonia o pueblo?</legend>  
+    <input type="checkbox" name="rap" id="rap" class="custom"/>
+	<label for="rap">Tansporte publico</label> 
+    
+    
+    <input type="checkbox" name="balada" id="balada" class="custom"/>
+	<label for="balada">Caminos pavimentados</label>
+    
+    
+    <input type="checkbox" name="hip" id="hip" class="custom"/>
+	<label for="hip">calles adoquinadas</label>
+    
+    
+    <input type="checkbox" name="regue" id="regue" class="custom"/>
+	<label for="regue">luz electrica</label>
+    
+    
+    <input type="checkbox" name="bacha" id="bacha" class="custom"/>
+	<label for="bacha">Todos Los anteriores</label><br>
+     
+
+     <fieldset data-role="controlgroup"> <legend>Su casa es </legend>
+    <select>
+<option>Propia</option>
+<option>Rentada</option>
+<option>De un familiar </option>
+<option>La habita como paracaedista </option>
+</select>
+</fieldset><br>
+
+ <fieldset data-role="controlgroup"> <legend>Cuantas personas habitan la casa?</legend>
+    <select>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>Mas de 8</option>
+</select>
+</fieldset><br>
+
+
+        <input type="submit" data-inline="true" value="Enviar" data-theme>
+          <input type="reset" data-inline="true" value="Limpiar"> </form>
+
+
+</div>
+<foter><center>Jean Karlo Jimenez Contreras 5to "H"</center></foter> 
+</body>
+  
+</html>
